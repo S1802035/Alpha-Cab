@@ -6,12 +6,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Page</title>
-        <link href="/Alpha-Cab/css/bootstrap.css" rel="stylesheet">
-        <script src="/Alpha-Cab/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
-            
-         <button type="submit"  class="btn mx-auto btn-primary">Login</button> 
-    </body>
-</html>
+        <link rel="stylesheet" href="assests/mainAssests/css/main.css" />
+    <noscript><link rel="stylesheet" href="assests/mainAssests/css/noscript.css" /></noscript>
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <h1><a href="index.html" id="logo">Alpha Cab</a></h1>
+                    <hr />
+                    <p>Travel like royalty</p>
+                </header>
+                <footer>
+                    <a href="login" class="button circled scrolly">Login</a>
+                </footer>
+ 
+            </div>
+
+
+            </body>
+            </html>
 

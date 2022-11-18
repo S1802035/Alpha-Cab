@@ -10,9 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Log In - Alpha Cab</title>
-        <link href="/Alpha-Cab/css/bootstrap.css" rel="stylesheet">
-        <script src="/Alpha-Cab/js/bootstrap.bundle.min.js"></script>
+        <link href="assests/css/bootstrap.css" rel="stylesheet">
+        <script src="assests/js/bootstrap.bundle.min.js"></script>
+
     </head>
+    
     <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
         <h1 class="text-center mt-5 pt-5">Log In</h1>
         <form class='text-center container-sm mx-auto' action="login" method='post'>
