@@ -48,7 +48,7 @@ public class Login extends HttpServlet {
            
 
             processRequest(request, response);
-            JOptionPane.showMessageDialog("Alpha Cab", "Login Successful!"); // How to display certain pop up messages
+            JOptionPane.showMessageDialog(null, "Login Successful!", "Alpha Cab"); // How to display certain pop up messages
 
            
         } catch (SQLException ex) {
