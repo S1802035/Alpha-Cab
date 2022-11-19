@@ -24,7 +24,7 @@
             <label class="form-label">Password
             </label>
                 <input  class="form-control w-25 mx-auto mb-5" type="password" name='password'> 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="adminPanel.jsp" button type="submit" class="btn btn-primary">Login</button>
         </form>
     </body>
 </html>
