@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane; // Calling pop up message library
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,6 +50,7 @@ public class Login extends HttpServlet {
            
 
             processRequest(request, response);
+            JOptionPane.showMessageDialog("Alpha Cab", "Login Successful!"); // How to display certain pop up messages
 
            
         } catch (SQLException ex) {
@@ -64,11 +66,3 @@ public class Login extends HttpServlet {
     }
     
 }
-        
-        
-         
-        
-
-
-
-           
