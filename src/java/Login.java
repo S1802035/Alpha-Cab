@@ -1,9 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Names: Adham Yoonus, Ahmed Affaan, Ammar Abdul Rahman, Aminath Muzuna
+Title: Login.java
+Folder: Alpha-Cab
+Date: 18/11/2022
+Country: Republic of Maldives
+Code version: -
+Description: -
+Note: Uncomment codes to execute and comment them when not in use.
  */
 
+// Importing packages.
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,11 +23,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author user
- */
+
 @WebServlet(urlPatterns = {"/login"})
+// Main class.
 public class Login extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -38,10 +42,10 @@ public class Login extends HttpServlet {
             DB.getConnection();
             PreparedStatement st;
             ResultSet rs;
-            //get the username & password from database
+            // Gets the username & password from the database.
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            //creating a select query to check if the username and password in database
+            // Creating a select query to check if the username and password is in the database.
             String query = "SELECT * FROM users WHERE username = ? AND password = ?";
             st = DB.connection.prepareStatement(query);
             st.setString(1, username);
