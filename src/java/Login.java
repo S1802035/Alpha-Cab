@@ -10,19 +10,13 @@ Note: Uncomment codes to execute and comment them when not in use.
  */
 
 // Importing packages.
-import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane; // Calling pop up message library
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import java.io.*;
+import java.sql.*; // PreparedStatement, ResultSet, SQLException
+import java.util.logging.*; // Level, Logger
+import javax.swing.*; // Calling pop up message library
+import javax.servlet.*;
+import javax.servlet.annotation.*; // WebServlet
+import javax.servlet.http.*; // Servelet, ServletRequest, ServletResponse
 
 @WebServlet(urlPatterns = {"/login"})
 // Main class.
