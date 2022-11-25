@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2022 at 06:40 PM
+-- Generation Time: Nov 25, 2022 at 01:35 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -49,7 +49,7 @@ INSERT INTO `access` (`access_level`, `user_type`) VALUES
 
 CREATE TABLE `users` (
   `username` varchar(20) NOT NULL,
-  `password` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `name` varchar(50) NOT NULL,
   `phone_no` int(10) NOT NULL,
   `email` varchar(30) NOT NULL,
@@ -61,7 +61,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `name`, `phone_no`, `email`, `access_level`) VALUES
-('root', 'r00t@dm1n', 'rootadmin', 123456789, 'root@admin.com', 3);
+('customer', 'cust@123', 'customer', 987654, 'customer@alphataxi.com', 1),
+('driver', 'driv@123', 'driver', 1234567, 'driver@alphataxi.com', 2),
+('root', '$2a$12$MCpX/JmuW0XmeUQ4RhI.wemEVQazQixwaZ0z/1Wx45Kuzbw3ZaI0m', 'rootadmin', 123456789, 'root@admin.com', 3);
 
 --
 -- Indexes for dumped tables
