@@ -32,35 +32,32 @@ public class Login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
- try {
-            DB.getConnection();
-            PreparedStatement st;
-            ResultSet rs;
-            // Gets the username & password from the database.
-            String username = request.getParameter("username");
-            String password = request.getParameter("password");
-            // Creating a select query to check if the username and password is in the database.
-            String query = "SELECT * FROM users WHERE username = ? AND password = ?";
-            st = DB.connection.prepareStatement(query);
-            st.setString(1, username);
-            st.setString(2, password);
-            rs = st.executeQuery();
-           
-
-            processRequest(request, response);
-            JOptionPane.showMessageDialog(null, "Login Successful!", "Alpha Cab"); // How to display certain pop up messages
-
-           
-        } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);}
-       
-    
+        processRequest(request, response);
     }
- @Override
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        User user = User.getUser(username, password);
+
+        if (user == null) {
+            request.setAttribute("error", "Username or Password Incorrect");
             processRequest(request, response);
+        } else if (user.accessLevel == 1) {
+           HttpSession session = request.getSession();
+           session.setAttribute("user", user);
+            response.sendRedirect("customerPanel.html");
+        } else if (user.accessLevel == 2) {
+            response.sendRedirect("driverPanel.html");
+        } else if (user.accessLevel == 3) {
+            response.sendRedirect("adminPanel.html");
+        } else {
+            processRequest(request, response);
+        }
 
     }
-    
+
 }

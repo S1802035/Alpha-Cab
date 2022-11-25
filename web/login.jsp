@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,8 +25,12 @@
                 <input class="form-control w-25 mx-auto mb-2" name='username'>
             <label class="form-label">Password
             </label>
-                <input  class="form-control w-25 mx-auto mb-5" type="password" name='password'> 
-            <a href="adminPanel.jsp" button type="submit" class="btn btn-primary">Login</button>
+                <input  class="form-control w-25 mx-auto mb-4" type="password" name='password'> 
+                <c:if  test="${not empty error}">
+                <p class ="alert alert-danger w-25 mx-auto"  > ${error}</p>
+                </c:if>
+            <button type="submit" class="btn btn-primary">Login</button>
         </form>
+      
     </body>
 </html>
