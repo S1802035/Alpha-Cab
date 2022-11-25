@@ -15,8 +15,16 @@
     </head>
 
     <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
-        <h1 class="text-center mt-5 pt-5">Admin Panel</h1>
-        <div class="alert alert-info text-center mx-auto mt-5 w-25" role="alert"> This is the admin panel </div>
+        <h1 class="text-center mt-5 pt-5 mb-5">Admin Panel</h1>
+    <div class="d-grid gap-4 mx-auto">
+       <button type="button" class="btn btn-dark mx-auto">Register New Driver</button>
+      <button type="button" class="btn btn-dark mx-auto">Register New Customer</button>
+      <button type="button" class="btn btn-dark mx-auto">Update Existing Drivers</button>
+      <button type="button" class="btn btn-dark mx-auto">Update Existing Customers</button>
+      <button type="button" class="btn btn-dark mx-auto">List All Drivers</button>
+      <button type="button" class="btn btn-dark mx-auto">List All Customers</button>
+      <button type="button" class="btn btn-dark mx-auto">Assign Drivers To Bookings</button>
+      </div>
     </form>
 </body>
 </html>
