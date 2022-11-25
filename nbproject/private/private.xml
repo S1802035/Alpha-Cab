@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/AlphaCab/web/WEB-INF/jsp/index.jsp</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/AlphaCab/web/login.jsp</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Alpha-Cab/web/WEB-INF/jsp/customerPanel.jsp</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Alpha-Cab/src/java/User.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Alpha-Cab/web/WEB-INF/jsp/driverPanel.jsp</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Alpha-Cab/web/WEB-INF/jsp/adminPanel.jsp</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Alpha-Cab/src/java/Login.java</file>
         </group>
     </open-files>
 </project-private>

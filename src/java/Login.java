@@ -49,11 +49,11 @@ public class Login extends HttpServlet {
         } else if (user.accessLevel == 1) {
            HttpSession session = request.getSession();
            session.setAttribute("user", user);
-            response.sendRedirect("customerPanel.html");
+            response.sendRedirect("customerPanel.jsp");
         } else if (user.accessLevel == 2) {
-            response.sendRedirect("driverPanel.html");
+            response.sendRedirect("driverPanel.jsp");
         } else if (user.accessLevel == 3) {
-            response.sendRedirect("adminPanel.html");
+            response.sendRedirect("adminPanel.jsp");
         } else {
             processRequest(request, response);
         }

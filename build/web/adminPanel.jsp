@@ -17,7 +17,6 @@
     <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
         <h1 class="text-center mt-5 pt-5">Admin Panel</h1>
         <div class="alert alert-info text-center mx-auto mt-5 w-25" role="alert"> This is the admin panel </div>
-        <a href="index.html" button type="button" class="btn btn-outline-primary" disabled">Login</button>
     </form>
 </body>
 </html>
