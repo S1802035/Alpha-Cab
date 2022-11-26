@@ -18,7 +18,7 @@
         <link href="assests/css/bootstrap.css" rel="stylesheet">
         <script src="assests/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body>
-        <h1>Register New Driver</h1>
+    <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
+        <h1 class="text-center mt-5 pt-5 mb-5">Register New Driver</h1>
     </body>
 </html>
