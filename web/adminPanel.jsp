@@ -22,7 +22,10 @@
       <a href="\Alpha-Cab\registerNewDriver.jsp">
       <button type="button" class="btn btn-dark mx-auto" href="\Alpha-Cab\registerNewDriver.jsp">Register New Driver</button>
       </a>
+      <%-- Register New Customer Panel --%>
+      <a href="\Alpha-Cab\registerNewCustomer.jsp">
       <button type="button" class="btn btn-dark mx-auto">Register New Customer</button>
+      </a>
       <button type="button" class="btn btn-dark mx-auto">Update Existing Drivers</button>
       <button type="button" class="btn btn-dark mx-auto">Update Existing Customers</button>
       <button type="button" class="btn btn-dark mx-auto">List All Drivers</button>
