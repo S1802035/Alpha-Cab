@@ -18,7 +18,10 @@
         <h1 class="text-center mt-5 pt-5 mb-5">Admin Panel</h1>
     <form>
     <div class="d-grid gap-4 mx-auto">
-      <button type="button" class="btn btn-dark mx-auto" onclick="Alpha-Cab\registerNewDriver.jsp">Register New Driver</button>
+      <%-- Register Driver Panel --%>
+      <a href="\Alpha-Cab\registerNewDriver.jsp">
+      <button type="button" class="btn btn-dark mx-auto" href="\Alpha-Cab\registerNewDriver.jsp">Register New Driver</button>
+      </a>
       <button type="button" class="btn btn-dark mx-auto">Register New Customer</button>
       <button type="button" class="btn btn-dark mx-auto">Update Existing Drivers</button>
       <button type="button" class="btn btn-dark mx-auto">Update Existing Customers</button>
