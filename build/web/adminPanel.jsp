@@ -17,6 +17,7 @@
     <body class="bg-success p-2 text-dark bg-opacity-10 pt-5">
         <h1 class="text-center mt-5 pt-5 mb-5">Admin Panel</h1>
     <form>
+    <center>
     <div class="d-grid gap-4 mx-auto">
       <%-- Register Driver Panel --%>
       <a href="\Alpha-Cab\adminPanel\registerNewDriver.jsp">
@@ -46,7 +47,8 @@
       <a href="/Alpha-Cab/adminPanel/assignDriversToBookings.jsp">
       <button type="button" class="btn btn-dark mx-auto">Assign Drivers To Bookings</button>
       </a>
-      </div>
+    </div>
+    </center>
     </form>
 </body>
 </html>
