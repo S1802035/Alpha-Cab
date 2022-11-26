@@ -19,27 +19,33 @@
     <form>
     <div class="d-grid gap-4 mx-auto">
       <%-- Register Driver Panel --%>
-      <a href="\Alpha-Cab\registerNewDriver.jsp">
+      <a href="\Alpha-Cab\adminPanel\registerNewDriver.jsp">
       <button type="button" class="btn btn-dark mx-auto" href="\Alpha-Cab\registerNewDriver.jsp">Register New Driver</button>
       </a>
       <%-- Register New Customer Panel --%>
-      <a href="\Alpha-Cab\registerNewCustomer.jsp">
+      <a href="\Alpha-Cab\adminPanel\registerNewCustomer.jsp">
       <button type="button" class="btn btn-dark mx-auto">Register New Customer</button>
       </a>
       <%-- Update Exsiting Drivers Panel --%>
-      <a href="\Alpha-Cab\updateExistingDrivers.jsp">
+      <a href="\Alpha-Cab\adminPanel\updateExistingDrivers.jsp">
       <button type="button" class="btn btn-dark mx-auto">Update Existing Drivers</button>
       </a>
       <%-- Update Exsiting Customers Panel --%>
-      <a href="\Alpha-Cab\updateExistingCustomers.jsp">
+      <a href="\Alpha-Cab\adminPanel\updateExistingCustomers.jsp">
       <button type="button" class="btn btn-dark mx-auto">Update Existing Customers</button>
       </a>
       <%-- List All Drivers Panel --%>
-      <a href="\Alpha-Cab\listAllDrivers.jsp">
+      <a href="\Alpha-Cab\adminPanel\listAllDrivers.jsp">
       <button type="button" class="btn btn-dark mx-auto">List All Drivers</button>
       </a>
+      <%-- List All Customers Panel --%>
+      <a href="\Alpha-Cab\adminPanel\listAllCustomers.jsp">
       <button type="button" class="btn btn-dark mx-auto">List All Customers</button>
+      </a>
+      <%-- Assign Drivers To Bookings Panel --%>
+      <a href="/Alpha-Cab/adminPanel/assignDriversToBookings.jsp">
       <button type="button" class="btn btn-dark mx-auto">Assign Drivers To Bookings</button>
+      </a>
       </div>
     </form>
 </body>
