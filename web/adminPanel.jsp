@@ -34,7 +34,10 @@
       <a href="\Alpha-Cab\updateExistingCustomers.jsp">
       <button type="button" class="btn btn-dark mx-auto">Update Existing Customers</button>
       </a>
+      <%-- List All Drivers Panel --%>
+      <a href="\Alpha-Cab\listAllDrivers.jsp">
       <button type="button" class="btn btn-dark mx-auto">List All Drivers</button>
+      </a>
       <button type="button" class="btn btn-dark mx-auto">List All Customers</button>
       <button type="button" class="btn btn-dark mx-auto">Assign Drivers To Bookings</button>
       </div>
