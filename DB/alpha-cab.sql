@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2022 at 01:35 PM
+-- Generation Time: Nov 26, 2022 at 05:04 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -50,9 +50,6 @@ INSERT INTO `access` (`access_level`, `user_type`) VALUES
 CREATE TABLE `users` (
   `username` varchar(20) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `phone_no` int(10) NOT NULL,
-  `email` varchar(30) NOT NULL,
   `access_level` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -60,10 +57,10 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`username`, `password`, `name`, `phone_no`, `email`, `access_level`) VALUES
-('customer', 'cust@123', 'customer', 987654, 'customer@alphataxi.com', 1),
-('driver', 'driv@123', 'driver', 1234567, 'driver@alphataxi.com', 2),
-('root', '$2a$12$MCpX/JmuW0XmeUQ4RhI.wemEVQazQixwaZ0z/1Wx45Kuzbw3ZaI0m', 'rootadmin', 123456789, 'root@admin.com', 3);
+INSERT INTO `users` (`username`, `password`, `access_level`) VALUES
+('customer', 'cust@123', 1),
+('driver', 'driv@123', 2),
+('root', 'root@123', 3);
 
 --
 -- Indexes for dumped tables
