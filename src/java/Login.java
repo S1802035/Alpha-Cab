@@ -47,8 +47,6 @@ public class Login extends HttpServlet {
             request.setAttribute("error", "Username or Password Incorrect");
             processRequest(request, response);
         } else if (user.accessLevel == 1) {
-           HttpSession session = request.getSession();
-           session.setAttribute("user", user);
             response.sendRedirect("customerPanel.jsp");
         } else if (user.accessLevel == 2) {
             response.sendRedirect("driverPanel.jsp");
